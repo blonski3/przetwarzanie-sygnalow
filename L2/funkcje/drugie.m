@@ -33,7 +33,7 @@ y_delay_sum = sig_delay_N(y_sin, 50) + sig_delay_N(y_sin, 150);
 
 % obliczanie parametrow
 mean_y_sin = mean(y_sin);           % srednia
-rms_y_sin = sqrt(mean(y_sin.^2));  % wartosc skuteczna
+rms_y_sin = A/sqrt(2);  % wartosc skuteczna
 
 
 
