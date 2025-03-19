@@ -8,7 +8,7 @@ A = 1;      % amplituda
 fsin = 1;  % freq
 fi = 0;     % faze
 
-y_sin = gen_sin(t, A, fsin, fi);
+y_sin = gen_sin(t, fsin, A, fi);
 
 figfile_store('dane_sin', t, y_sin);
 

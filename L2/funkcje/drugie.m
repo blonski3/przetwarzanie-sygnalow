@@ -3,12 +3,12 @@ fs = 1000; % czestotliwosc probkowania
 
 t = gen_time(N, fs);
 
-A = 0.5;     % amplituda
+A = 1;     % amplituda
 fsin = 10; % czestotliwosc
 fi = 0;    % faze
 
 % generowanie sygnalow
-y_sin = gen_sin(t, A, fsin, fi);
+y_sin = gen_sin(t, fsin, A, fi);
 y_triangle = gen_triangle(t, A, 0.5, 0.5);
 y_gauss = gen_gauss(t, 0.5, 0.1);
 
