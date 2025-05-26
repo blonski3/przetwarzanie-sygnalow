@@ -3,7 +3,7 @@ fs = 1000; % czestotliwosc probkowania
 
 t = gen_time(N, fs);
 
-A = 1;     % amplituda
+A = 0.5;     % amplituda
 fsin = 10; % czestotliwosc
 fi = 0;    % faze
 
@@ -32,57 +32,16 @@ y_delay = sig_delay_N(y_sin, Nd);
 y_delay_sum = sig_delay_N(y_sin, 50) + sig_delay_N(y_sin, 150);
 
 % obliczanie parametrow
-mean_y_sin = mean(y_sin);           % srednia
-rms_y_sin = A/sqrt(2);  % wartosc skuteczna
+mean_y_sin = mean(y_sin);   % srednia
+rms_y_sin = A/sqrt(2);      % wartosc skuteczna
 
 
 
 figure;
 
-% dodawanie
-subplot(3, 2, 1);
-plot(t, y_add, 'b');
-title('dodawanie');
-xlabel('Czas (s)');
-ylabel('Amplituda');
-grid on;
-
-% mnozenie
-subplot(3, 2, 2);
-plot(t, y_mult, 'r');
-title('mnozenie');
-xlabel('Czas (s)');
-ylabel('Amplituda');
-grid on;
-
 % skladowa stala
-subplot(3, 2, 3);
 plot(t, y_add_const, 'g');
 title('skladowa stala');
-xlabel('Czas (s)');
-ylabel('Amplituda');
-grid on;
-
-% zmiana amplitudy
-subplot(3, 2, 4);
-plot(t, y_amp_change, 'm');
-title('zmiana amplitudy');
-xlabel('Czas (s)');
-ylabel('Amplituda');
-grid on;
-
-% przesuwanie sygnalu
-subplot(3, 2, 5);
-plot(t, y_delay, 'c');
-title('przesuwanie sygnalu');
-xlabel('Czas (s)');
-ylabel('Amplituda');
-grid on;
-
-% sumowanie sygnałow przesunietych o rozne opoznienia
-subplot(3, 2, 6);
-plot(t, y_delay_sum, 'k');
-title('sumowanie sygnałow przesunietych');
 xlabel('Czas (s)');
 ylabel('Amplituda');
 grid on;
