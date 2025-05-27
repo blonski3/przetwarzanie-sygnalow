@@ -6,8 +6,8 @@ fs = 1000;                % częstotliwość próbkowania [Hz]
 t = linspace(0, (N-1)/fs, N);
 
 % --- Liczba okresów ---
-o1 = 4;                   % okresy dla x1
-o2 = 7;                   % okresy dla x2
+o1 = 6;                   % okresy dla x1
+o2 = 8;                   % okresy dla x2
 
 f1 = o1 / (N/fs);         % częstotliwość 1. sinusa
 f2 = o2 / (N/fs);         % częstotliwość 2. sinusa
