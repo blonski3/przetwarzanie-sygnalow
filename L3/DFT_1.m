@@ -2,7 +2,7 @@ clc; clear; close all;
 
 % parametry
 N = 20; % liczba probek
-k_values = [0, 1, 2, -1, 10, N-1, N, N+1]; % Wybrane wartości k
+k_values = [2, 5, 10, 19]; % Wybrane wartości k
 
 % wektor numerów probek
 n = 0:(N-1);

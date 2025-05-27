@@ -46,20 +46,20 @@ y5 = fftshift(y5);
 % wizualizacja wynikow
 figure;
 subplot(3,2,1);
-plot(time, x1, 'b'); title('sygnal sinusoidalny'); xlabel('Czas [s]'); ylabel('amplituda');
+plot(time, x2, 'b'); title('suma dwóch sinusow'); xlabel('Czas [s]'); ylabel('amplituda');
 
 subplot(3,2,2);
-plot(freq, abs(y1), 'b'); title('dwustronne widmo x1'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
+plot(freq, abs(y2), 'b'); title('dwustronne widmo x1'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
 
 subplot(3,2,3);
-plot(time, x2, 'r'); title('suma dwoch sinusoid'); xlabel('Czas [s]'); ylabel('amplituda');
+plot(time, x4, 'r'); title('gauss'); xlabel('Czas [s]'); ylabel('amplituda');
 
 subplot(3,2,4);
-plot(freq, abs(y2), 'r'); title('dwustronne widmo x2'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
+plot(freq, abs(y4), 'r'); title('dwustronne widmo x2'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
 
 subplot(3,2,5);
-stem(time, x3, 'g'); title('delta Kroneckera'); xlabel('czas [s]'); ylabel('amplituda');
+stem(time, x5, 'g'); title('sygnal trojkatny'); xlabel('czas [s]'); ylabel('amplituda');
 
 subplot(3,2,6);
-plot(freq, abs(y3), 'g'); title('dwustronne widmo x3'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
+plot(freq, abs(y5), 'g'); title('dwustronne widmo x3'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
 

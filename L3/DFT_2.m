@@ -43,20 +43,20 @@ y6 = sig_rdft(x6);
 % wizualizacja wynikow
 figure;
 subplot(3,2,1);
-plot(time, x1, 'b'); title('sygnal sinusoidalny'); xlabel('czas [s]'); ylabel('amplituda');
+plot(time, x2, 'b'); title('suma dwóch sinusow'); xlabel('czas [s]'); ylabel('amplituda');
 
 subplot(3,2,2);
-stem(freq, abs(y1), 'b'); title('widmo amplitudowe x1'); xlabel('czestotliwosc [Hz]'); ylabel('|Y(f)|');
+stem(freq, abs(y2), 'b'); title('widmo amplitudowe x1'); xlabel('czestotliwosc [Hz]'); ylabel('|Y(f)|');
 
 subplot(3,2,3);
-plot(time, x2, 'r'); title('suma dwoch sinusoid'); xlabel('czas [s]'); ylabel('amplituda');
+plot(time, x4, 'r'); title('gauss'); xlabel('czas [s]'); ylabel('amplituda');
 
 subplot(3,2,4);
-stem(freq, abs(y2), 'r'); title('widmo amplitudowe x2'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
+stem(freq, abs(y4), 'r'); title('widmo amplitudowe x2'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
 
 subplot(3,2,5);
-stem(time, x3, 'g'); title('delta Kroneckera'); xlabel('czas [s]'); ylabel('Amplituda');
+stem(time, x5, 'g'); title('sygnał trójkątny'); xlabel('czas [s]'); ylabel('Amplituda');
 
 subplot(3,2,6);
-stem(freq, abs(y3), 'g'); title('widmo amplitudowe x3'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
+stem(freq, abs(y5), 'g'); title('widmo amplitudowe x3'); xlabel('czestotliwość [Hz]'); ylabel('|Y(f)|');
 
