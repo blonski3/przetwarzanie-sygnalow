@@ -14,8 +14,8 @@ function rms = sig_rms(x)
 end
 
 % --- Parametry sygnału ---
-A = 2;          % amplituda
-f = 50;         % częstotliwość
+A = 10;          % amplituda
+f = 15;         % częstotliwość
 fs = 1000;      % częstotliwość próbkowania
 N = 1000;       % liczba próbek
 t = linspace(0, (N-1)/fs, N);
